@@ -1,5 +1,8 @@
 .logo {
    font-family: var(--font-bebas-nueue);
-   pointer-events: none;
    width: max-content;
+   a {
+      color: #342218;
+      cursor: default;
+   }
 }

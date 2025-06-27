@@ -26,6 +26,13 @@
                 font-weight: 700;
                 transition: .2s;
             }
+            &.socials {
+                margin-left: auto;
+                a .circle:hover {
+                    transition: .1s;
+                    background-color: v.$primary-hover;
+                }
+            }
         }
     }
     @include m.respond-to('tablet') {

@@ -92,8 +92,8 @@ export default function Footer() {
       <hr className={styles.line} />
       <div className={styles.bottom}>
         <p>@ 2025 - SAN BERNARDO TRATTORIA</p>
-        <a href="/privacy" className={styles.privacy}>
-          Politiche Privacy
+        <a href="/privacyecookie" className={styles.privacy}>
+          Privacy e Cookie
         </a>
       </div>
     </footer>

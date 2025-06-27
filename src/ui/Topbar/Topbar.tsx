@@ -3,7 +3,8 @@ import styles from './Topbar.module.scss';
 import Circle from '@/components/Button/Circle/Circle';
 import { IoCallOutline, IoLocationOutline } from 'react-icons/io5';
 import { LuClock } from "react-icons/lu";
-import { infos } from '@/features/infos';
+import { infos, socials } from '@/features/infos';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 export default function Topbar() {
   return (
@@ -20,6 +21,10 @@ export default function Topbar() {
         <li className={styles['not-mobile']}>
           <Circle Icon={LuClock} classname={styles.circle} />
           <span className={styles.text}>{infos.timetable.open.days}: {infos.timetable.open.hours}</span> 
+        </li>
+        <li className={styles.socials}>
+          <a href={socials.facebook} target='blank'><Circle Icon={FaFacebook} classname={styles.circle} /></a>
+          <a href={socials.instagram} target='blank'><Circle Icon={FaInstagram} classname={styles.circle} /></a>
         </li>
       </ul>
     </div>
