@@ -28,6 +28,9 @@
             }
             &.socials {
                 margin-left: auto;
+                display: flex;
+                align-items: center;
+                gap: v.$s;
                 a .circle:hover {
                     transition: .1s;
                     background-color: v.$primary-hover;
