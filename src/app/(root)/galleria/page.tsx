@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./page.module.scss";
 import { infos } from "@/features/infos";
 import { IoIosCall } from "react-icons/io";
-import { FadeIn } from "@/components/Animation/FadeIn";
+import FadeIn from "@/components/Animation/FadeIn";
 
 const images = [
   // location
