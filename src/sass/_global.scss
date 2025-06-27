@@ -1,0 +1,109 @@
+@forward './class';
+@forward './root';
+@use './variables' as v;
+@use './mixins' as m;
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+    font-family: var(--font-montserrat), sans-serif;   
+    overflow-x: hidden;
+    background-color: v.$bg-1a;
+    color: v.$p-color;
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+h1 {
+    $h1-size: 112px;
+    color: v.$title;
+    font-size: clamp(
+        3.5rem, 
+        13vw, 
+        $h1-size
+    );
+    font-weight: 800;
+    line-height: 1.1;
+    &.dark {
+        color: v.$title-dark;
+    }
+}
+
+h2 {
+    $h2-size: 72px;
+    color: v.$title-2;
+        font-size: clamp(
+        2.7rem, 
+        12vw, 
+        $h2-size
+    );
+    font-weight: 800;
+    line-height: 1.1;
+}
+h3 {
+    color: v.$subtitle;
+    font-size: clamp(
+        1.8rem,
+        9vw,
+        v.$xxxl
+    );
+    font-weight: 700;
+    line-height: 1.1;
+}
+h4 {
+    color: v.$subtitle;
+    font-size: v.$xl;
+    font-weight: 800;
+    line-height: 1.15;
+}
+h5 {
+    color: v.$subtitle;
+    font-size: v.$m;
+    font-weight: 600;
+    line-height: 1.35;
+}
+p {
+    line-height: 1.55;
+    &.large {
+        font-size: v.$l;
+        font-weight: 500;
+    }
+    &.medium {
+        font-size: clamp(
+            1.125rem,
+            3vw,
+            v.$m
+        );
+        font-weight: 500;
+    }
+    &.small {
+        font-size: v.$s;
+    }
+}
+
+a {
+    text-decoration: none;
+    &.simple-link {
+        color: v.$p-color;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &.simple-link-2 {
+        text-decoration: underline;
+        color: v.$p-color;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

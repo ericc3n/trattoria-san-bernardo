@@ -1,0 +1,9 @@
+@use '@/sass/variables' as v;
+
+.circle {
+    margin-inline: auto;
+    display: grid;
+    place-content: center;
+    border-radius: 100%;
+    aspect-ratio: 1 / 1;
+}

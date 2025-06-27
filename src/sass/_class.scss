@@ -1,0 +1,99 @@
+@use './variables' as v;
+
+// Typography
+.font-weight-semibold {
+    font-weight: 600;
+}
+.font-weight-medium {
+    font-weight: 500;
+}
+.font-size-small {      // INUTILIZZATO
+    font-size: v.$s;
+}
+
+// Spacing
+.s-mx {
+    margin-inline: var(--S-MX);
+}
+.s-px {
+    padding-inline: var(--S-MX);
+}
+
+.mt-xxs { margin-top: v.$xxs; }
+.mt-xs  { margin-top: v.$xs; }
+.mt-s   { margin-top: v.$s; }
+.mt-regular { margin-top: v.$regular; }
+.mt-m   { margin-top: v.$m; }
+.mt-l   { margin-top: v.$l; }
+.mt-xl  { margin-top: v.$xl; }
+.mt-xxl { margin-top: v.$xxl; }
+.mt-xxxl { margin-top: v.$xxxl; }
+
+// Syling
+button.btn-1s,
+a.btn-1s {
+    transition: .2s;
+    display: inline-block;
+    font: v.$s var(--font-montserrat), sans-serif;
+    padding: .75em 1.125em;
+    border-radius: v.$xs;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 600;
+    background-color: v.$primary;
+    &:hover {
+        background-color: v.$primary-hover;
+    }
+    &.loading {
+        cursor: not-allowed;
+        opacity: .2;
+    }
+}
+button.btn-1l,
+a.btn-1l {
+    transition: .2s;
+    display: inline-block;
+    font: v.$regular var(--font-montserrat), sans-serif;
+    padding: 1.125em 2em;
+    border-radius: v.$xs;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 600;
+    background-color: v.$primary;
+    &:hover {
+        background-color: v.$primary-hover;
+    }
+    &.loading {
+        cursor: not-allowed;
+        opacity: .2;
+    }
+}
+button.btn-1li,
+a.btn-1li {
+    transition: .2s;
+    display: inline-block;
+    font: v.$regular var(--font-montserrat), sans-serif;
+    padding-block: 1.125em;
+    padding-left: 1.75em;
+    padding-right: 2em;
+    border-radius: v.$xs;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 600;
+    background-color: v.$primary;
+    svg {
+        font-size: v.$l;
+        margin-right: 8px;
+        vertical-align: middle;
+    }
+    &:hover {
+        background-color: v.$primary-hover;
+    }
+    &.loading {
+        cursor: not-allowed;
+        opacity: .2;
+    }
+}

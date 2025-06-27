@@ -1,0 +1,16 @@
+@use './mixins' as m;
+
+:root {
+    --S-MX: 15vw;
+
+}
+@include m.respond-to('desktop') {
+    :root {
+        --S-MX: calc(12vw - 2rem);
+    }
+}
+@include m.respond-to('mobile') {
+    :root {
+        --S-MX: 1.25rem;
+    }
+}

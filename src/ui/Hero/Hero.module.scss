@@ -1,0 +1,19 @@
+@use '@/sass/variables' as v;
+@use '@/sass/mixins' as m;
+
+.hero {
+    min-height: 80dvh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    .text-content {
+        z-index: 2;
+        text-align: center;
+        max-width: 790px;
+        p {
+            color: v.$title-2-dark;
+        }
+    }
+}

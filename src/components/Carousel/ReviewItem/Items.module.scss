@@ -1,0 +1,26 @@
+@use '@/sass/variables' as v;
+
+.item {
+  background-color: v.$bg-2;
+  padding: v.$regular;
+  border-radius: 4px;
+  margin-right: v.$regular;
+  max-width: 400px;
+  min-height: 208px;
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: v.$xs;
+    img {
+      border-radius: 100%;
+    }
+    .info .stars {
+      margin-top: 4px;
+      color: v.$primary;
+      display: flex;
+    }
+  }
+  p {
+    line-height: 1.55;
+  }
+}

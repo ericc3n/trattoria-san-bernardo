@@ -1,0 +1,95 @@
+@use '@/sass/variables' as v;
+@use '@/sass/mixins' as m;
+
+.footer {
+  background: v.$bg-3;
+  padding-block: v.$xxxl v.$m;
+  a {
+    color: v.$p-color;
+    transition: color 0.2s;
+    &:hover {
+      color: v.$primary-hover;
+    }
+  }
+  .columns {
+    display: flex;
+    gap: v.$xxl;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: v.$xl;
+  }
+
+  .col {
+    flex: 1 1 180px;
+  }
+
+  .title {
+    color: v.$subtitle;
+    font-size: v.$xl;
+    font-weight: 800;
+    margin-bottom: v.$xs;
+    letter-spacing: 0.5px;
+  }
+
+  .desc {
+    color: v.$p-color;
+    margin-bottom: v.$xs;
+  }
+
+  .socials {
+    display: flex;
+    gap: v.$s;
+    margin-top: v.$regular;
+
+    a {
+      color: v.$title;
+      font-size: 2rem;
+      transition: color 0.2s;
+      &:hover {
+        color: v.$primary;
+      }
+    }
+  }
+
+  .label {
+    font-weight: 300;
+    margin-bottom: v.$xs;
+  }
+
+  .links {
+    list-style: none;
+    li {
+      line-height: 1.55;
+      display: flex;
+      gap: v.$xxs;
+      align-items: center;
+    }
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  .line {
+    border: none;
+    border-top: 1px solid v.$ui-small;
+    margin-block: v.$l;
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: v.$m;
+    align-items: center;
+    font-size: v.$s;
+
+    .privacy {
+      font-size: v.$s;
+      transition: color 0.2s;
+      &:hover {
+        color: v.$primary;
+      }
+    }
+  }
+}

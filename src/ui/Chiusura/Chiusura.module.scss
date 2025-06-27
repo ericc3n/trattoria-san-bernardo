@@ -1,0 +1,61 @@
+@use '@/sass/variables' as v;
+@use '@/sass/mixins' as m;
+
+.chiusura {
+  padding-block: v.$xxxl;
+  display: flex;
+  gap: v.$xl;
+  align-items: center;
+  justify-content: center;
+
+  .images-container {
+    width: 50%;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      min-width: 220px;
+      max-width: 340px;
+      border-radius: 16px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  @include m.respond-to('tablet') {
+    background: 
+    linear-gradient(0deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 100%),
+    url('/location/esterno-3.jpg') center/cover no-repeat;
+    flex-direction: column;
+    align-items: center;
+
+    .text-container {
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+      align-items: center;
+      text-align: center;
+
+      h2 {
+        color: v.$title-2-dark;
+      }
+
+      p {
+        color: v.$p-color-dark;
+      }
+    }
+
+    .images-container {
+      display: none;
+    }
+  }
+}

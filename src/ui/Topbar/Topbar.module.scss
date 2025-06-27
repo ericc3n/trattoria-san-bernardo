@@ -1,0 +1,36 @@
+@use '@/sass/variables' as v;
+@use '@/sass/mixins' as m;
+
+.circle {
+    height: 22px;
+    font-size: v.$s;
+    background-color: v.$title-dark;
+    color: v.$title;
+}
+
+.topbar {
+    background-color: v.$title;
+    ul {
+        padding-block: v.$regular;
+        display: flex;
+        align-items: center;
+        gap: v.$xxl;
+        list-style: none;
+        li {
+            display: flex;
+            align-items: center;
+            gap: v.$xxs;
+            .text {
+                font-size: v.$s;
+                color: v.$title-dark;
+                font-weight: 700;
+                transition: .2s;
+            }
+        }
+    }
+    @include m.respond-to('tablet') {
+        ul li.not-mobile {
+            display: none;
+        }
+    }
+}

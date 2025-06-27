@@ -1,0 +1,32 @@
+@use '@/sass/variables' as v;
+@use '@/sass/mixins' as m;
+
+.reviews-section {
+    padding-block: v.$xxxl;
+    background-color: v.$bg-1b;
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: v.$l;
+        margin-bottom: v.$xxl;
+        .text .icon {
+            color: v.$primary;
+        }
+        .logos {
+            display: flex;
+            align-items: center;
+            gap: v.$l;
+            img {
+                width: 56px;
+                height: auto;
+            }
+        }
+    }
+    @include m.respond-to('tablet') {
+        .content {
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+}

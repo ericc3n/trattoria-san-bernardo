@@ -1,0 +1,67 @@
+@use '@/sass/variables' as v;
+@use '@/sass/mixins' as m;
+
+.orari {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: calc(2 * v.$xxxl);
+  background: 
+    linear-gradient(0deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 100%),
+    url('/location/esterno-3.jpg') center/cover no-repeat;
+
+  .card {
+    background: v.$bg-2;
+    border-radius: 16px;
+    padding: 2.5rem 2.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+
+    svg {
+      color: v.$primary;
+      font-size: 4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .orari-info {
+
+      span {
+        font-weight: 700;
+      }
+      p {
+        color: v.$subtitle;
+      }
+    }
+  }
+
+  .text {
+    width: 50%;
+
+    h2 {
+      color: v.$title-2-dark;
+    }
+    p {
+      color: v.$p-color-dark;
+    }
+  }
+
+  @include m.respond-to('tablet') {
+    flex-direction: column;
+    align-items: center;
+    gap: v.$xxl;
+
+    .card, .text {
+      width: 100%;
+      max-width: 100%;
+    }
+    .card {
+      max-width: 400px;
+      align-items: center;
+    }
+    .text {
+      text-align: center;
+    }
+  }
+}
