@@ -16,11 +16,11 @@ const snapscrollElements: SnapscrollElementsType[] = [
     title: "Silenzio, natura e mura antiche",
     description: (
       <>
-        Siamo a <strong>Morimondo</strong>, nel cuore del borgo.<br />
-        Il glicine abbraccia il dehors, il profumo di legna e cucina ti viene incontro già dal cancello.<br />
-        Dentro?<br />
-        Legno, calore, un’accoglienza che ti fa sentire atteso.<br />
-        Non serviamo solo cibo. <strong>Serviamo emozioni</strong>.
+        Siamo a <strong>Morimondo</strong>, nel cuore del borgo. <br />
+        Il glicine abbraccia il dehors, il profumo di legna e cucina ti coinvolgono immediatamente. <br />
+        All’interno la sala arredata con gusto,
+        con ampie vetrate che danno sui giardini per un’accoglienza che ti fa sentire atteso. <br />
+        Non serviamo solo cibo, <strong>serviamo emozioni</strong>.
       </>
     ),
   },
@@ -33,7 +33,7 @@ const snapscrollElements: SnapscrollElementsType[] = [
     title: "Ogni piatto ha il suo complice",
     description: (
       <>
-        La fusione tra i piatti e la nostra <strong>scelta di vini</strong> è l’ingrediente segreto per un’esperienza paradisiaca.<br />
+        La fusione tra i piatti della tradizione e la nostra <strong>scelta di vini</strong> è l’ingrediente segreto per un’esperienza suggestiva.<br />
         Rimarrai entusiasta di fronte alla ricca e ricercata scelta presente sulla carta dei vini.
       </>
     )
@@ -47,7 +47,9 @@ const snapscrollElements: SnapscrollElementsType[] = [
     title: "Non è solo un pasto: È un rituale",
     description: (
       <>
-        Ti lascerai trasportare da un flusso di emozioni: dalla scelta accurata delle <strong>materie prime</strong>, alla semplicità della <strong>tradizione</strong>, unita all’<strong>innovazione</strong> che cerca di trasmettere emozioni, non solo sapori, fino all’estasi culinaria servita con passione.
+        Ti lascerai trasportare da un flusso di emozioni: dalla scelta accurata delle <strong>materie prime</strong>,<br /><br />
+        alla semplicità della <strong>tradizione</strong>, unita all’<strong>innovazione</strong> che cerca di trasmettere emozioni,<br /><br />
+        non solo sapori, fino all’esaltazione culinaria servita con passione.
       </>
     )
   },

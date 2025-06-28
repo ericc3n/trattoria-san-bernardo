@@ -12,7 +12,7 @@ export default function Chiusura() {
     <FadeIn delay={0.4}>
       <section className={`s-px ${styles["chiusura"]}`}>
         <div className={`${styles["text-container"]}`}>
-          <h2>Vieni a vivere un’esperienza da ricordare</h2>
+          <h2>Vieni e vivi un’esperienza da ricordare</h2>
           <p className="medium mt-xl">Godi dei sapori della cucina vissuta con passione</p>
           <a href={`tel:+39${infos.phone}`} className="btn-1li mt-xxl"><IoIosCall />Prenota ora</a>
         </div>
