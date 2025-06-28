@@ -2,7 +2,7 @@
 @use '@/sass/mixins' as m;
 
 .hero {
-    min-height: 80vh;
+    min-height: calc(80vh - 40px);
     position: relative;
     display: flex;
     justify-content: center;
