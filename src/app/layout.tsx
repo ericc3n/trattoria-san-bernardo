@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Playfair } from "next/font/google";
 import "@/sass/_global.scss";
 import { Analytics } from "@vercel/analytics/next";
 
@@ -7,6 +7,11 @@ const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['200', '300', '400', '500', '600', '700', '800'],
   variable: '--font-montserrat'
+});
+const playFair = Playfair({
+  subsets: ['latin'],
+  weight: ['700', '800', '900'],
+  variable: '--font-play-fair'
 });
 
 export const metadata: Metadata = {
@@ -22,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="it">
-      <body className={`${montserrat.className}`}>
+      <body className={`${montserrat.variable} ${playFair.variable}`}>
         {children}
         <Analytics />
       </body>

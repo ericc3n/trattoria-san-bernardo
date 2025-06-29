@@ -5,6 +5,9 @@
   z-index: 0;
   height: 75dvh;
   user-select: none;
+  @include m.respond-to('mobile') {
+    height: 550px;
+  }
 }
 
 .fade-in {

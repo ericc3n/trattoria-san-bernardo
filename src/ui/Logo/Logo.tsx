@@ -2,15 +2,9 @@
 
 import React from 'react';
 import styles from './Logo.module.scss';
-import { Bebas_Neue } from "next/font/google";
 import Link from 'next/link';
-import { usePathname } from 'next/navigation'; // For Next.js 13+ app directory
-
-const bebasNueue = Bebas_Neue({
-  subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-bebas-nueue'
-});
+import { usePathname } from 'next/navigation'; 
+import Image from 'next/image';
 
 export default function Logo() {
   const pathname = usePathname();
@@ -23,12 +17,10 @@ export default function Logo() {
   };
 
   return (
-    <div className={`${styles.logo} ${bebasNueue.className}`}>
-      <h4>
-        <Link href='/' scroll={true} onClick={handleClick}>
-          TRATTORIA SAN BERNARDO
-        </Link>
-      </h4>
+    <div className={styles.logo}>
+      <Link href='/' scroll={true} onClick={handleClick}>
+        <Image src='/logo.png' alt='logo' height={24} width={181} />
+      </Link>
     </div>
   );
 };

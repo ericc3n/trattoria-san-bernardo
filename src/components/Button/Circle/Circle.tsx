@@ -24,7 +24,7 @@ export default function Circle({ Icon, style, classname, href }: CirclePropsType
     );
   }
   return (
-    <a href={href} target='_blank'>
+    <a href={href} target='_blank' rel="noopener noreferrer" aria-label="mini-link">
       <span className={`${styles.circle} ${classname}`} style={style}>
         {typeof Icon === 'string' ? Icon : <Icon />}
       </span>

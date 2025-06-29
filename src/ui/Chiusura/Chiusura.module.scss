@@ -4,12 +4,17 @@
 .chiusura {
   padding-block: v.$xxxl;
   display: flex;
-  gap: v.$xl;
+  gap: v.$xxxl;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+
+  .text-container {
+    flex: 1;
+  }
 
   .images-container {
-    width: 50%;
+    flex: 1;
+    max-width: 600px;
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
@@ -39,7 +44,6 @@
     align-items: center;
 
     .text-container {
-      width: 100%;
       max-width: 100%;
       padding: 0;
       align-items: center;

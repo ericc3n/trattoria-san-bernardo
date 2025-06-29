@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React from "react";
 import Logo from "../Logo/Logo";
@@ -8,6 +8,7 @@ import styles from "./Footer.module.scss";
 import Link from "next/link";
 import { IoLocationSharp } from "react-icons/io5";
 import { IoIosCall } from "react-icons/io";
+import Circle from "@/components/Button/Circle/Circle";
 
 export default function Footer() {
   return (
@@ -15,24 +16,18 @@ export default function Footer() {
       <div className={styles.columns}>
         <div className={styles.col}>
           <Logo />
-          <p className={`${styles.desc} mt-xxs`}>Miglior trattoria milanese</p>
+          <p className={`${styles.desc} mt-xxs`}>Storica trattoria nel cuore di Morimondo</p>
           <div className={styles.socials}>
-            <a
+            <Circle
               href={socials.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-            >
-              <FaFacebook />
-            </a>
-            <a
+              Icon={FaFacebook}
+              classname={styles.circle}
+            />
+            <Circle
               href={socials.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-            >
-              <FaInstagram />
-            </a>
+              Icon={FaInstagram}
+              classname={styles.circle}
+            />
           </div>
         </div>
         {/* Col 2: Orario */}
@@ -54,6 +49,9 @@ export default function Footer() {
           <ul className={styles.links}>
             <li>
               <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href='/menu.pdf'>Menù</Link>
             </li>
             <li>
               <Link href="/galleria">Galleria</Link>
