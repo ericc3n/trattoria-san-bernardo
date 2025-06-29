@@ -47,8 +47,8 @@ const snapscrollElements: SnapscrollElementsType[] = [
     title: "Non È Solo Un Pasto: È Un Rituale",
     description: (
       <>
-        Ti lascerai trasportare da un flusso di emozioni: dalla scelta accurata delle <strong>materie prime</strong>,<br /><br />
-        alla semplicità della <strong>tradizione</strong>, unita all’<strong>innovazione</strong> che cerca di trasmettere emozioni,<br /><br />
+        Ti lascerai trasportare da un flusso di emozioni: dalla scelta accurata delle <strong>materie prime</strong>,
+        alla semplicità della <strong>tradizione</strong>, unita all’<strong>innovazione</strong> che cerca di trasmettere emozioni,
         non solo sapori, fino all’esaltazione culinaria servita con passione.
       </>
     )
