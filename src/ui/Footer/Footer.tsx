@@ -8,6 +8,7 @@ import styles from "./Footer.module.scss";
 import Link from "next/link";
 import { IoLocationSharp } from "react-icons/io5";
 import { IoIosCall } from "react-icons/io";
+import Circle from "@/components/Button/Circle/Circle";
 
 export default function Footer() {
   return (
@@ -17,22 +18,16 @@ export default function Footer() {
           <Logo />
           <p className={`${styles.desc} mt-xxs`}>Miglior trattoria milanese</p>
           <div className={styles.socials}>
-            <a
+            <Circle
               href={socials.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-            >
-              <FaFacebook />
-            </a>
-            <a
+              Icon={FaFacebook}
+              classname={styles.circle}
+            />
+            <Circle
               href={socials.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-            >
-              <FaInstagram />
-            </a>
+              Icon={FaInstagram}
+              classname={styles.circle}
+            />
           </div>
         </div>
         {/* Col 2: Orario */}

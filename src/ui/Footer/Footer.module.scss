@@ -41,12 +41,14 @@
     gap: v.$s;
     margin-top: v.$regular;
 
-    a {
-      color: v.$title;
-      font-size: 2rem;
-      transition: color 0.2s;
+    .circle {
+      background-color: v.$title;
+      color: #fff;
+      font-size: 1.25rem;
+      width: 2.125rem;
+      transition: 0.2s;
       &:hover {
-        color: v.$primary;
+        background-color: v.$primary-hover;
       }
     }
   }
