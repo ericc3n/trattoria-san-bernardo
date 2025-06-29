@@ -17,6 +17,6 @@
         }
     }
     @include m.respond-to('mobile') {
-        min-height: 550px;
+        min-height: 500px;
     }
 }

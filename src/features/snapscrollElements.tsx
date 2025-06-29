@@ -55,6 +55,19 @@ const snapscrollElements: SnapscrollElementsType[] = [
   },
   {
     imgs: [
+      "/location/esterno-10.jpg",
+      "/menu/secondo-5.jpg",
+      "/menu/secondo-6.jpg"
+    ],
+    title: "La Carne, La Nostra Specialità",
+    description: (
+      <>
+        Tagli generosi, scelti con cura minuziosa. Cotti sulla <strong>griglia a vista</strong>, dove il profumo ti avvolge e puoi vedere la passione in ogni gesto.
+      </>
+    )
+  },
+  {
+    imgs: [
       "/menu/dolce-4.jpg",
       "/menu/dolce-3.jpg",
       "/menu/dolce-1.jpg"

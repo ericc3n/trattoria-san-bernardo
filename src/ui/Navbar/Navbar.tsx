@@ -21,7 +21,6 @@ export default function Navbar() {
   // Resize navbar
   const isTabletVp = useMediaQuery(`(max-width: ${TABLET_SCREEN}px)`);
 
-
   // Disable Body
   useEffect(() => {
     if (isMenuOpened) {
@@ -51,8 +50,8 @@ export default function Navbar() {
         }
         <ul className={`link-pages ${isMenuOpened ? 'show' : 'hide'}`}>
           <li onClick={closeMenu}><Link href='/'>Home</Link></li>
-          <li onClick={closeMenu}><Link href='/menu.pdf'>Menù</Link></li>
-          <li onClick={closeMenu}><Link href='/galleria' rel='noopener'>Galleria</Link></li>
+          <li onClick={closeMenu}><Link href='/menu.pdf' rel='noopener' target='_blank'>Menù</Link></li>
+          <li onClick={closeMenu}><Link href='/galleria'>Galleria</Link></li>
           <li onClick={closeMenu}><Link href='/orario'>Orario</Link></li>
           <li onClick={closeMenu}><Link className='btn-1s' href='/prenota'>Prenota</Link></li>
         </ul>
