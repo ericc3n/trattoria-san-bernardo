@@ -16,7 +16,7 @@ export default function Footer() {
       <div className={styles.columns}>
         <div className={styles.col}>
           <Logo />
-          <p className={`${styles.desc} mt-xxs`}>Miglior trattoria milanese</p>
+          <p className={`${styles.desc} mt-xxs`}>Storica trattoria nel cuore di Morimondo</p>
           <div className={styles.socials}>
             <Circle
               href={socials.facebook}
@@ -49,6 +49,9 @@ export default function Footer() {
           <ul className={styles.links}>
             <li>
               <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href='/menu.pdf'>Menù</Link>
             </li>
             <li>
               <Link href="/galleria">Galleria</Link>
